@@ -38,12 +38,13 @@
         <h3 class="text-2xl text-gray-500">Genius Geometry</h3>
       </div>
       <div>
-        <button onclick="window.location.href = 'blog.html'" class="text-white bg-primaryBlue hover:bg-blue-600 px-6 py-2 rounded-lg">Blog</button>
+        <button onclick="window.location.href = 'blog.html'"
+          class="text-white bg-primaryBlue hover:bg-blue-600 px-6 py-2 rounded-lg">Blog</button>
       </div>
     </div>
   </header>
   <main>
-    <!-- Cards of shapes -->
+    <!-- ---------------Cards of shapes-------------- -->
     <section class="pt-10">
       <div class="md:flex gap-5">
         <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-5">
@@ -53,14 +54,14 @@
             <h4 class="font-bold text-lg pt-4">Triangle</h4>
             <p class="font-medium text-gray-600 pb-2">Area (a) = 0.5 x h x h</p>
             <div class="mb-6">
-              <input id="" type="text" placeholder="b"
+              <input id="triangle-b" type="text" placeholder="b"
                 class="bg-slate-100 rounded w-3/12 mr-3 px-2 py-1 text-gray-600 ">cm
-              <input id="" type="text" placeholder="h" class="bg-slate-100 rounded w-3/12 ml-3 px-2 py-1 text-gray-600">
+              <input id="triangle-h" type="text" placeholder="h" class="bg-slate-100 rounded w-3/12 ml-3 px-2 py-1 text-gray-600">
               cm
             </div>
-            <button class="bg-primaryBlue hover:bg-blue-600 rounded-lg px-24 py-3 text-white">Calculate</button>
+            <button id="triangle-btn" class="bg-primaryBlue hover:bg-blue-600 rounded-lg px-24 py-3 text-white">Calculate</button>
           </div>
-                    <!-- Rectangle Card -->
+          <!-- Rectangle Card -->
           <div class="border-2 border-gray-200 rounded-lg py-5 mx-auto flex flex-col items-center text-center">
             <div class="m-5 h-48"><img class="mx-auto w-full h-full" src="images/rectangle.png" alt=""></div>
             <h4 class="font-bold text-lg pt-4">Rectangle</h4>
@@ -73,7 +74,7 @@
             </div>
             <button class="bg-primaryBlue hover:bg-blue-600 rounded-lg px-24 py-3 text-white">Calculate</button>
           </div>
-                    <!-- Parallelogram -->
+          <!-- Parallelogram -->
           <div class="border-2 border-gray-200 rounded-lg py-5 mx-auto flex flex-col items-center text-center">
             <div class="m-5 h-48"><img class="mx-auto w-full h-full" src="images/parallelogram.png" alt=""></div>
             <h4 class="font-bold text-lg pt-4">Parallelogram</h4>
@@ -94,7 +95,8 @@
             <div class="mb-6">
               <input id="" type="text" placeholder="d1"
                 class="bg-slate-100 rounded w-3/12 mr-3 px-2 py-1 text-gray-600 ">cm
-              <input id="" type="text" placeholder="d2" class="bg-slate-100 rounded w-3/12 ml-3 px-2 py-1 text-gray-600">
+              <input id="" type="text" placeholder="d2"
+                class="bg-slate-100 rounded w-3/12 ml-3 px-2 py-1 text-gray-600">
               cm
             </div>
             <button class="bg-primaryBlue hover:bg-blue-600 rounded-lg px-24 py-3 text-white">Calculate</button>
@@ -126,13 +128,21 @@
             <button class="bg-primaryBlue hover:bg-blue-600 rounded-lg px-24 py-3 text-white">Calculate</button>
           </div>
         </div>
-        <div class="md:w-3/12 border-2 border-gray-200 rounded-lg py-5 mx-auto text-center">
-          <h1 class="underline font-bold">Area Calculation</h1>
-          <p>lorem10</p>
+        <div class="md:w-5/12 border-2 border-gray-200 rounded-lg px-8 py-5 mx-auto ">
+          <h1 class="underline font-bold text-center pb-5">Area Calculation</h1>
+           <ol id="result-list">
+            <li id="triangle-area" class="hidden">Triangle <span id="triangle-area-result">12</span> cm<sup>2</sup></li>
+            <li class="hidden">Ellipse 125.60 cm<sup>2</sup></li>
+            <li class="hidden">Parallelogram 125.60 cm<sup>2</sup></li>
+           </ol>
         </div>
       </div>
     </section>
   </main>
+
+  <!-- Scripts -->
+  <script src="js/utilities.js"></script>
+  <script src="js/triangle.js"></script>
 </body>
 
 </html>
