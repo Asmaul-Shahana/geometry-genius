@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- font Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            primaryBlue: '#1090D8',
+          },
+          fontFamily: {
+            inter: ["Inter", "sans-serif"],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-inter">
+    <section class="bg-sky-100">
+        <div class="p-10">
+            <h2 class="text-2xl font-bold">1. What is DOM and what is the purpose of DOM?</h2>
+            <p class="text-lg mt-3"><strong>DOM</strong> represents for Document Object Model.<br>
+                It is a programming interface for web documents.<br>
+                It gives a logical structure of documents and the way it is manipulated.<br>
+                It acts as a tree of objects. We can change HTML elements, attributes,<br>
+                add new and remove elements,
+                 style the elements. We can also add events to the<br>page using DOM. We use the <strong>document</strong> word to define the document object.</p>
+        </div>
+        <div class="px-10 pb-10">
+            <h2 class="text-2xl font-bold">2. How will you select HTML elements using DOM? Name the DOM methods.</h2>
+            <p class="text-lg mt-3">We can select elements by using <strong>selectors</strong>.<br>
+            DOM selectors selects HTML elements within document.<br>
+            After writing document, we can select from any of the six methods:</p>
+            <ul class="list-disc list-inside">
+                <li>getElementByTagName()</li>
+                <li>getElementById()</li>
+                <li>getElementByClassName()</li>
+                <li>getElementByName()</li>
+                <li>querySelector()</li>
+                <li>querySelectorAll()</li>
+            </ul>
+        </div>
+        <div class="px-10 pb-10">
+            <h2 class="text-2xl font-bold">3. What is event bubble?</h2>
+            <p class="text-lg mt-3">Event bubble is a concept of DOM. It happens when an element receives<br>
+                an event and that event bubbles up to its parents and anscestors until it<br>reaches the root element. To stop event bubbling, we use 
+                <strong><em>event.stopPropagation()</em>.</strong>
+            </p>
+        </div>
+        <div class="px-10 pb-10">
+            <h2 class="text-2xl font-bold">4. What is a callback function and why will you use it?</h2>
+            <p class="text-lg mt-3">A <strong>Callback</strong> function is a function that is passed as an argument.<br>
+                We need callback functions because JS runs code in a top-down fashion.<br>JS actions don't stop the program from running until they are completed.<br>Callback makes sure that a function is not going to run before a task is<br>completed and only run when the current program is finished. Hence the<br>sequence of code is maintained and errors are avoided.
+                </p>
+                </div>
+    </section>
+</body>
+</html>
