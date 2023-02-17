@@ -45,12 +45,13 @@
   <main>
     <!-- Cards of shapes -->
     <section class="pt-10">
-      <div class="flex gap-4">
-        <div class="grid grid-cols-3 gap-6">
+      <div class="md:flex gap-5">
+        <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-5">
+          <!-- Triangle Card -->
           <div class="border-2 border-gray-200 rounded-lg py-5 mx-auto flex flex-col items-center text-center">
-            <div><img src="images/triangle.png" alt=""></div>
+            <div class="m-5 h-48"><img class="mx-auto w-full" src="images/triangle.png" alt=""></div>
             <h4 class="font-bold text-lg pt-4">Triangle</h4>
-            <p class="font-medium text-gray-600 pb-2">Area (a) = 0.5 X h X h</p>
+            <p class="font-medium text-gray-600 pb-2">Area (a) = 0.5 x h x h</p>
             <div class="mb-6">
               <input id="" type="text" placeholder="b"
                 class="bg-slate-100 rounded w-3/12 mr-3 px-2 py-1 text-gray-600 ">cm
@@ -59,24 +60,75 @@
             </div>
             <button class="bg-primaryBlue hover:bg-blue-600 rounded-lg px-24 py-3 text-white">Calculate</button>
           </div>
-          <div class="border-2 border-gray-200 rounded-lg p-6 mx-auto">
-            <img src="images/rectangle.png" alt="">
+                    <!-- Rectangle Card -->
+          <div class="border-2 border-gray-200 rounded-lg py-5 mx-auto flex flex-col items-center text-center">
+            <div class="m-5 h-48"><img class="mx-auto w-full h-full" src="images/rectangle.png" alt=""></div>
+            <h4 class="font-bold text-lg pt-4">Rectangle</h4>
+            <p class="font-medium text-gray-600 pb-2">Area (A) = w x l</p>
+            <div class="mb-6">
+              <input id="" type="text" placeholder="w"
+                class="bg-slate-100 rounded w-3/12 mr-3 px-2 py-1 text-gray-600 ">cm
+              <input id="" type="text" placeholder="l" class="bg-slate-100 rounded w-3/12 ml-3 px-2 py-1 text-gray-600">
+              cm
+            </div>
+            <button class="bg-primaryBlue hover:bg-blue-600 rounded-lg px-24 py-3 text-white">Calculate</button>
           </div>
-          <div class="border-2 border-gray-200 rounded-lg p-6 mx-auto">
-            <img src="images/parallelogram.png" alt="">
+                    <!-- Parallelogram -->
+          <div class="border-2 border-gray-200 rounded-lg py-5 mx-auto flex flex-col items-center text-center">
+            <div class="m-5 h-48"><img class="mx-auto w-full h-full" src="images/parallelogram.png" alt=""></div>
+            <h4 class="font-bold text-lg pt-4">Parallelogram</h4>
+            <p class="font-medium text-gray-600 pb-2">Area (A) = b x h</p>
+            <div class="mb-6">
+              <input id="" type="text" placeholder="b"
+                class="bg-slate-100 rounded w-3/12 mr-3 px-2 py-1 text-gray-600 ">cm
+              <input id="" type="text" placeholder="h" class="bg-slate-100 rounded w-3/12 ml-3 px-2 py-1 text-gray-600">
+              cm
+            </div>
+            <button class="bg-primaryBlue hover:bg-blue-600 rounded-lg px-24 py-3 text-white">Calculate</button>
           </div>
-          <div class="border-2 border-gray-200 rounded-lg p-6 mx-auto">
-            <img src="images/rhombus.png" alt="">
+          <!-- Rhombus card -->
+          <div class="border-2 border-gray-200 rounded-lg py-5 mx-auto flex flex-col items-center text-center">
+            <div class="m-5 h-48"><img class="mx-auto w-full h-full" src="images/rhombus.png" alt=""></div>
+            <h4 class="font-bold text-lg pt-4">Rhombus</h4>
+            <p class="font-medium text-gray-600 pb-2">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+            <div class="mb-6">
+              <input id="" type="text" placeholder="d1"
+                class="bg-slate-100 rounded w-3/12 mr-3 px-2 py-1 text-gray-600 ">cm
+              <input id="" type="text" placeholder="d2" class="bg-slate-100 rounded w-3/12 ml-3 px-2 py-1 text-gray-600">
+              cm
+            </div>
+            <button class="bg-primaryBlue hover:bg-blue-600 rounded-lg px-24 py-3 text-white">Calculate</button>
           </div>
-          <div class="border-2 border-gray-200 rounded-lg p-6 mx-auto">
-            <img src="images/pentagon.png" alt="">
+          <!-- Pentagon card -->
+          <div class="border-2 border-gray-200 rounded-lg py-5 mx-auto flex flex-col items-center text-center">
+            <div class="m-5 h-48"><img class="mx-auto w-full h-full" src="images/pentagon.png" alt=""></div>
+            <h4 class="font-bold text-lg pt-4">Pentagon</h4>
+            <p class="font-medium text-gray-600 pb-2">Area (A) = 0.5 x p x b</p>
+            <div class="mb-6">
+              <input id="" type="text" placeholder="p"
+                class="bg-slate-100 rounded w-3/12 mr-3 px-2 py-1 text-gray-600 ">cm
+              <input id="" type="text" placeholder="b" class="bg-slate-100 rounded w-3/12 ml-3 px-2 py-1 text-gray-600">
+              cm
+            </div>
+            <button class="bg-primaryBlue hover:bg-blue-600 rounded-lg px-24 py-3 text-white">Calculate</button>
           </div>
-          <div class="border-2 border-gray-200 rounded-lg p-6 mx-auto">
-            <img src="images/ellipse.png" alt="">
+          <!-- ellipse card -->
+          <div class="border-2 border-gray-200 rounded-lg py-5 mx-auto flex flex-col items-center text-center">
+            <div class="m-5 h-48"><img class="mx-auto w-full h-full" src="images/ellipse.png" alt=""></div>
+            <h4 class="font-bold text-lg pt-4">Ellipse</h4>
+            <p class="font-medium text-gray-600 pb-2">Area (A) = pi x h x h</p>
+            <div class="mb-6">
+              <input id="" type="text" placeholder="a"
+                class="bg-slate-100 rounded w-3/12 mr-3 px-2 py-1 text-gray-600 ">cm
+              <input id="" type="text" placeholder="b" class="bg-slate-100 rounded w-3/12 ml-3 px-2 py-1 text-gray-600">
+              cm
+            </div>
+            <button class="bg-primaryBlue hover:bg-blue-600 rounded-lg px-24 py-3 text-white">Calculate</button>
           </div>
         </div>
-        <div class="w-1/4 border-2 border-gray-200 rounded-lg py-5 mx-auto text-center">
+        <div class="md:w-3/12 border-2 border-gray-200 rounded-lg py-5 mx-auto text-center">
           <h1 class="underline font-bold">Area Calculation</h1>
+          <p>lorem10</p>
         </div>
       </div>
     </section>
