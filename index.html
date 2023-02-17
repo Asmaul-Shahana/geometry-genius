@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geometry Genius</title>
+  <!-- Tailwind CDN -->
+  <!-- font Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            primaryBlue: '#1090D8',
+          },
+          fontFamily: {
+            inter: ["Inter", "sans-serif"],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="m-8 font-inter">
+  <!-- Header -->
+  <header>
+    <div class="bg-sky-100 w-full px-8 py-4 rounded-lg flex justify-between items-center">
+      <div>
+        <h1 class="text-4xl font-bold">Interactive</h1>
+        <h3 class="text-2xl text-gray-500">Genius Geometry</h3>
+      </div>
+      <div>
+        <button class="text-white bg-primaryBlue hover:bg-blue-600 px-6 py-2 rounded-lg">Blog</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- Cards of shapes -->
+    <section class="pt-10">
+      <div class="flex gap-4">
+        <div class="grid grid-cols-3 gap-6">
+          <div class="border-2 border-gray-200 rounded-lg py-5 mx-auto flex flex-col items-center text-center">
+            <div><img src="images/triangle.png" alt=""></div>
+            <h4 class="font-bold text-lg pt-4">Triangle</h4>
+            <p class="font-medium text-gray-600 pb-2">Area (a) = 0.5 X h X h</p>
+            <div class="mb-6">
+              <input id="" type="text" placeholder="b"
+                class="bg-slate-100 rounded w-3/12 mr-3 px-2 py-1 text-gray-600 ">cm
+              <input id="" type="text" placeholder="h" class="bg-slate-100 rounded w-3/12 ml-3 px-2 py-1 text-gray-600">
+              cm
+            </div>
+            <button class="bg-primaryBlue hover:bg-blue-600 rounded-lg px-24 py-3 text-white">Calculate</button>
+          </div>
+          <div class="border-2 border-gray-200 rounded-lg p-6 mx-auto">
+            <img src="images/rectangle.png" alt="">
+          </div>
+          <div class="border-2 border-gray-200 rounded-lg p-6 mx-auto">
+            <img src="images/parallelogram.png" alt="">
+          </div>
+          <div class="border-2 border-gray-200 rounded-lg p-6 mx-auto">
+            <img src="images/rhombus.png" alt="">
+          </div>
+          <div class="border-2 border-gray-200 rounded-lg p-6 mx-auto">
+            <img src="images/pentagon.png" alt="">
+          </div>
+          <div class="border-2 border-gray-200 rounded-lg p-6 mx-auto">
+            <img src="images/ellipse.png" alt="">
+          </div>
+        </div>
+        <div class="w-1/4 border-2 border-gray-200 rounded-lg py-5 mx-auto text-center">
+          <h1>Area</h1>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
