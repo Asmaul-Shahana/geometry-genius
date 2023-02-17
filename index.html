@@ -67,12 +67,12 @@
             <h4 class="font-bold text-lg pt-4">Rectangle</h4>
             <p class="font-medium text-gray-600 pb-2">Area (A) = w x l</p>
             <div class="mb-6">
-              <input id="" type="text" placeholder="w"
+              <input id="rectangle-w" type="text" placeholder="w"
                 class="bg-slate-100 rounded w-3/12 mr-3 px-2 py-1 text-gray-600 ">cm
-              <input id="" type="text" placeholder="l" class="bg-slate-100 rounded w-3/12 ml-3 px-2 py-1 text-gray-600">
+              <input id="rectangle-l" type="text" placeholder="l" class="bg-slate-100 rounded w-3/12 ml-3 px-2 py-1 text-gray-600">
               cm
             </div>
-            <button class="bg-primaryBlue hover:bg-blue-600 rounded-lg px-24 py-3 text-white">Calculate</button>
+            <button id="rectangle-btn" class="bg-primaryBlue hover:bg-blue-600 rounded-lg px-24 py-3 text-white">Calculate</button>
           </div>
           <!-- Parallelogram -->
           <div class="border-2 border-gray-200 rounded-lg py-5 mx-auto flex flex-col items-center text-center">
@@ -132,7 +132,7 @@
           <h1 class="underline font-bold text-center pb-5">Area Calculation</h1>
            <ol id="result-list">
             <li id="triangle-area" class="hidden">Triangle <span id="triangle-area-result">12</span> cm<sup>2</sup></li>
-            <li class="hidden">Ellipse 125.60 cm<sup>2</sup></li>
+            <li id="rectangle-area" class="hidden">Ellipse <span id="rectangle-area-result">120.65</span> cm<sup>2</sup></li>
             <li class="hidden">Parallelogram 125.60 cm<sup>2</sup></li>
            </ol>
         </div>
@@ -143,6 +143,7 @@
   <!-- Scripts -->
   <script src="js/utilities.js"></script>
   <script src="js/triangle.js"></script>
+  <script src="js/rectangle.js"></script>
 </body>
 
 </html>

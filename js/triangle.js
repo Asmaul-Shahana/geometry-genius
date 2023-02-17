@@ -8,10 +8,9 @@ document.getElementById('triangle-btn').addEventListener('click', function(){
         alert('Insert two non-negative values')
         return;
     }
-    // Calculating area of triangle
-    const areaTriangle = 0.5 * triangleBValue * triangleHValue;
+    // Calculating area of rectangle
+    const areaTriangle = (0.5 * triangleBValue * triangleHValue).toFixed(2);
     const triangleAreaResult = document.getElementById('triangle-area');
-    const areaValueGiven = getTextElementValue('triangle-area-result');
     setTextElementValue('triangle-area-result', areaTriangle);
     triangleAreaResult.style.display='block';
 })
