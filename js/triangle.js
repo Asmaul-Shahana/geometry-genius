@@ -8,7 +8,6 @@ document.getElementById('triangle-btn').addEventListener('click', function(){
         alert('Insert two non-negative values');
         return;
     }
-    console.log(triangleBValue, triangleHValue);
 
     // Calculating area of rectangle
     const areaTriangle = (0.5 * triangleBValue * triangleHValue).toFixed(2);

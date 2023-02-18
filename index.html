@@ -81,12 +81,12 @@
               <h4 class="font-bold text-lg pt-4">Parallelogram</h4>
               <p class="font-medium text-gray-600 pb-2">Area (A) = b x h</p>
               <div class="mb-6">
-                <input id="" type="text" placeholder="b"
+                <input id="parallelogram-b" type="text" placeholder="b"
                   class="bg-slate-100 rounded w-3/12 mr-3 px-2 py-1 text-gray-600 ">cm
-                <input id="" type="text" placeholder="h" class="bg-slate-100 rounded w-3/12 ml-3 px-2 py-1 text-gray-600">
+                <input id="parallelogram-h" type="text" placeholder="h" class="bg-slate-100 rounded w-3/12 ml-3 px-2 py-1 text-gray-600">
                 cm
               </div>
-              <button class="bg-primaryBlue hover:bg-blue-600 rounded-lg px-24 py-3 text-white">Calculate</button>
+              <button id="parallelogram-btn" class="bg-primaryBlue hover:bg-blue-600 rounded-lg px-24 py-3 text-white">Calculate</button>
             </div>
             <!-- Rhombus card -->
             <div class="border-2 border-gray-200 rounded-lg py-5 mx-auto flex flex-col items-center text-center">
@@ -94,13 +94,13 @@
               <h4 class="font-bold text-lg pt-4">Rhombus</h4>
               <p class="font-medium text-gray-600 pb-2">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
               <div class="mb-6">
-                <input id="" type="text" placeholder="d1"
+                <input id="rhombos-d1" type="text" placeholder="d1"
                   class="bg-slate-100 rounded w-3/12 mr-3 px-2 py-1 text-gray-600 ">cm
-                <input id="" type="text" placeholder="d2"
+                <input id="rhombus-d2" type="text" placeholder="d2"
                   class="bg-slate-100 rounded w-3/12 ml-3 px-2 py-1 text-gray-600">
                 cm
               </div>
-              <button class="bg-primaryBlue hover:bg-blue-600 rounded-lg px-24 py-3 text-white">Calculate</button>
+              <button id="rhombus-btn" class="bg-primaryBlue hover:bg-blue-600 rounded-lg px-24 py-3 text-white">Calculate</button>
             </div>
             <!-- Pentagon card -->
             <div class="border-2 border-gray-200 rounded-lg py-5 mx-auto flex flex-col items-center text-center">
@@ -108,12 +108,12 @@
               <h4 class="font-bold text-lg pt-4">Pentagon</h4>
               <p class="font-medium text-gray-600 pb-2">Area (A) = 0.5 x p x b</p>
               <div class="mb-6">
-                <input id="" type="text" placeholder="p"
+                <input id="pentagon-p" type="text" placeholder="p"
                   class="bg-slate-100 rounded w-3/12 mr-3 px-2 py-1 text-gray-600 ">cm
-                <input id="" type="text" placeholder="b" class="bg-slate-100 rounded w-3/12 ml-3 px-2 py-1 text-gray-600">
+                <input id="pentagon-b" type="text" placeholder="b" class="bg-slate-100 rounded w-3/12 ml-3 px-2 py-1 text-gray-600">
                 cm
               </div>
-              <button class="bg-primaryBlue hover:bg-blue-600 rounded-lg px-24 py-3 text-white">Calculate</button>
+              <button id="pentagon-btn" class="bg-primaryBlue hover:bg-blue-600 rounded-lg px-24 py-3 text-white">Calculate</button>
             </div>
             <!-- ellipse card -->
             <div class="border-2 border-gray-200 rounded-lg py-5 mx-auto flex flex-col items-center text-center">
@@ -121,17 +121,17 @@
               <h4 class="font-bold text-lg pt-4">Ellipse</h4>
               <p class="font-medium text-gray-600 pb-2">Area (A) = 	&#960 x h x h</p>
               <div class="mb-6">
-                <input id="" type="text" placeholder="a"
+                <input id="ellipse-a" type="text" placeholder="a"
                   class="bg-slate-100 rounded w-3/12 mr-3 px-2 py-1 text-gray-600 ">cm
-                <input id="" type="text" placeholder="b" class="bg-slate-100 rounded w-3/12 ml-3 px-2 py-1 text-gray-600">
+                <input id="ellipse-b" type="text" placeholder="b" class="bg-slate-100 rounded w-3/12 ml-3 px-2 py-1 text-gray-600">
                 cm
               </div>
-              <button class="bg-primaryBlue hover:bg-blue-600 rounded-lg px-24 py-3 text-white">Calculate</button>
+              <button id="ellipse-btn" class="bg-primaryBlue hover:bg-blue-600 rounded-lg px-24 py-3 text-white">Calculate</button>
             </div>
           </div>
         </div>
         <!-- ------Area Calculation section------- -->
-        <div class="md:w-4/12 border-2 border-gray-200 rounded-lg px-8 py-5 mx-auto ">
+        <div class="md:w-4/12 border-2 border-gray-200 rounded-lg px-8 py-5 mx-auto">
           <h1 class="underline font-bold text-center pb-5">Area Calculation</h1>
            <ol id="area-container" class="list-decimal">
             <!--Results will be added here -->
