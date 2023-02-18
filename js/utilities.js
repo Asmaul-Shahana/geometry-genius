@@ -32,6 +32,7 @@ function setTextElementValue(elementId, value)
     element.innerText = value;
 }
 
+// Random color generatore
 function randomInteger(max) {
     return Math.floor(Math.random()*(max + 1));
 }

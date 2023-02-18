@@ -23,11 +23,13 @@ document.getElementById('ellipse-btn').addEventListener('click', function(){
 
     // Calculating area of rectangle
     const areaEllipse = (Math.PI * ellipseAValue * ellipseBValue).toFixed(2);
+
     // Setting area result in area calculation field
     const areaContainer = document.getElementById('area-container');
     const li = document.createElement('li');
     li.innerHTML = "Ellipse&nbsp&nbsp&nbsp" + areaEllipse + "&nbsp&nbsp&nbsp cm<sup>2</sup>&nbsp&nbsp&nbsp";
     areaContainer.appendChild(li);
+    
     // Button
     const btn = document.createElement('button');
     btn.innerHTML = 'Convert to to m<sup>2</sup>';
