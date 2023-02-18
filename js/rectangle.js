@@ -1,3 +1,14 @@
+const rectangleCard = document.getElementById('rectangle-card');
+rectangleCard.addEventListener('mouseenter', function()
+{
+    const color = randomHexColor();
+    rectangleCard.style.backgroundColor= color;
+})
+rectangleCard.addEventListener('mouseleave', function()
+{
+    rectangleCard.style.backgroundColor='white';
+})
+
 document.getElementById('rectangle-btn').addEventListener('click', function(){
     const rectangleWValue = getInputFieldValue('rectangle-w');
     const rectangleLValue = getInputFieldValue('rectangle-l');
