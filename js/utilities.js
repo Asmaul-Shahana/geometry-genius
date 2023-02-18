@@ -12,7 +12,7 @@ function getInputFieldValue(inputId)
         }
     else if(inputValue<0)
         return false;
-        
+
    return inputValue;
 }
 
@@ -31,5 +31,3 @@ function setTextElementValue(elementId, value)
     const element = document.getElementById(elementId);
     element.innerText = value;
 }
-
-document.getElementById('result-list').style.listStyle="decimal";

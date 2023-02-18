@@ -5,13 +5,24 @@ document.getElementById('rectangle-btn').addEventListener('click', function(){
     // Validation for Negative, NaN, single or no value
     if(!rectangleWValue || !rectangleLValue)
     {
-        alert('Insert two non-negative values')
+        alert('Insert two non-negative values');
         return;
     }
     // Calculating area of triangle
     const areaRectangle = (rectangleWValue * rectangleLValue).toFixed(2);
-    const rectangleAreaResult = document.getElementById('rectangle-area');
-    // const areaValueGiven = getTextElementValue('rectangle-area-result');
-    setTextElementValue('rectangle-area-result', areaRectangle);
-    rectangleAreaResult.style.display='block';
+
+    // Setting area result in area calculation field
+    const areaContainer = document.getElementById('area-container');
+    const li = document.createElement('li');
+    li.innerHTML = "Rectangle&nbsp&nbsp&nbsp" + areaRectangle + "&nbsp&nbsp&nbsp cm<sup>2</sup>&nbsp&nbsp&nbsp";
+    areaContainer.appendChild(li);
+    // Button
+    const btn = document.createElement('button');
+    btn.innerHTML = 'Convert to to m<sup>2</sup>';
+    btn.style.backgroundColor='#1090D8';
+    btn.style.padding='5px 8px';
+    btn.style.borderRadius='5px';
+    btn.style.color='white';
+    btn.style.marginBottom='3px';
+    li.appendChild(btn);
 })
