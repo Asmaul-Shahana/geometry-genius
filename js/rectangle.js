@@ -1,3 +1,4 @@
+// On mouse over, random card background color
 const rectangleCard = document.getElementById('rectangle-card');
 rectangleCard.addEventListener('mouseenter', function()
 {
@@ -16,7 +17,7 @@ document.getElementById('rectangle-btn').addEventListener('click', function(){
     // Validation for Negative, NaN, single or no value
     if(!rectangleWValue || !rectangleLValue)
     {
-        alert('Insert two non-negative values');
+        alert('Insert two non-negative numbers');
         return;
     }
     // Calculating area of triangle

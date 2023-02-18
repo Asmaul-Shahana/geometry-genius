@@ -1,3 +1,15 @@
+// On mouse over, random card background color
+const parallelogramCard = document.getElementById('parallelogram-card');
+parallelogramCard.addEventListener('mouseenter', function()
+{
+    const color = randomHexColor();
+    parallelogramCard.style.backgroundColor= color;
+})
+parallelogramCard.addEventListener('mouseleave', function()
+{
+    parallelogramCard.style.backgroundColor='white';
+})
+
 document.getElementById('parallelogram-btn').addEventListener('click', function(){
     const parallelogramBValue = getInputFieldValue('parallelogram-b');
     const parallelogramHValue = getInputFieldValue('parallelogram-h');
@@ -5,7 +17,7 @@ document.getElementById('parallelogram-btn').addEventListener('click', function(
     // Validation for Negative, NaN, single or no value
     if(!parallelogramBValue || !parallelogramHValue)
     {
-        alert('Insert two non-negative values');
+        alert('Insert two non-negative numbers');
         return;
     }
 

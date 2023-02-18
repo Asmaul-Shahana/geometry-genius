@@ -1,3 +1,4 @@
+// On mouse over, random card background color
 const triangleCard = document.getElementById('triangle-card');
 triangleCard.addEventListener('mouseenter', function()
 {
@@ -16,7 +17,7 @@ document.getElementById('triangle-btn').addEventListener('click', function(){
     // Validation for Negative, NaN, single or no value
     if(!triangleBValue || !triangleHValue)
     {
-        alert('Insert two non-negative values');
+        alert('Insert two non-negative numbers');
         return;
     }
 
