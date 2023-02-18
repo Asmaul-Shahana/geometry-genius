@@ -5,10 +5,6 @@ rhombusCard.addEventListener('mouseenter', function()
     const color = randomHexColor();
     rhombusCard.style.backgroundColor= color;
 })
-rhombusCard.addEventListener('mouseleave', function()
-{
-    rhombusCard.style.backgroundColor='white';
-})
 
 document.getElementById('rhombus-btn').addEventListener('click', function(){
     const rhombusD1Value = getInputFieldValue('rhombus-d1');

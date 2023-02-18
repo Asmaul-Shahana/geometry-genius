@@ -5,10 +5,6 @@ pentagonCard.addEventListener('mouseenter', function()
     const color = randomHexColor();
     pentagonCard.style.backgroundColor= color;
 })
-pentagonCard.addEventListener('mouseleave', function()
-{
-    pentagonCard.style.backgroundColor='white';
-})
 
 document.getElementById('pentagon-btn').addEventListener('click', function(){
     const pentagonPValue = getInputFieldValue('pentagon-p');

@@ -5,10 +5,6 @@ triangleCard.addEventListener('mouseenter', function()
     const color = randomHexColor();
     triangleCard.style.backgroundColor= color;
 })
-triangleCard.addEventListener('mouseleave', function()
-{
-    triangleCard.style.backgroundColor='white';
-})
 
 document.getElementById('triangle-btn').addEventListener('click', function(){
     const triangleBValue = getInputFieldValue('triangle-b');

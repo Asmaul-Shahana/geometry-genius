@@ -5,10 +5,7 @@ parallelogramCard.addEventListener('mouseenter', function()
     const color = randomHexColor();
     parallelogramCard.style.backgroundColor= color;
 })
-parallelogramCard.addEventListener('mouseleave', function()
-{
-    parallelogramCard.style.backgroundColor='white';
-})
+
 
 document.getElementById('parallelogram-btn').addEventListener('click', function(){
     const parallelogramBValue = getInputFieldValue('parallelogram-b');

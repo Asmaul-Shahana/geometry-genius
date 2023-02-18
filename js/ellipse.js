@@ -5,10 +5,6 @@ ellipseCard.addEventListener('mouseenter', function()
     const color = randomHexColor();
     ellipseCard.style.backgroundColor= color;
 })
-ellipseCard.addEventListener('mouseleave', function()
-{
-    ellipseCard.style.backgroundColor='white';
-})
 
 document.getElementById('ellipse-btn').addEventListener('click', function(){
     const ellipseAValue = getInputFieldValue('ellipse-a');
@@ -29,7 +25,7 @@ document.getElementById('ellipse-btn').addEventListener('click', function(){
     const li = document.createElement('li');
     li.innerHTML = "Ellipse&nbsp&nbsp&nbsp" + areaEllipse + "&nbsp&nbsp&nbsp cm<sup>2</sup>&nbsp&nbsp&nbsp";
     areaContainer.appendChild(li);
-    
+
     // Button
     const btn = document.createElement('button');
     btn.innerHTML = 'Convert to to m<sup>2</sup>';
